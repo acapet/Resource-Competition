@@ -19,17 +19,15 @@
 \usepackage[]{caption}
 \usepackage{tikz}
 
-
-
-%the-sun-is-in-love-with-the-moon-collab-with-blaak.jpg
-
-%\titlegraphic{\includegraphics[]{the-sun-is-in-love-with-the-moon-collab-with-blaak.jpg} \hspace{2cm} \includegraphics[width=2cm]}}
 \title[Resource Competition]{Resource Competition and Community Structure}
-\subtitle{OCEA0096-1 	Modélisation des écosystèmes et des cycles biogéochimiques : Partim Ressources}
+%\titlegraphic{}
+\subtitle{\vspace{3mm}
+\includegraphics[width=7cm]{the-sun-is-in-love-with-the-moon-collab-with-blaak.jpg} \\
+\vspace{2mm}
+OCEA0096-1 Modélisation des écosystèmes et des cycles biogéochimiques : Partim Ressources}
 \author[A. Capet]{A. Capet - acapet@ulg.ac.be} %Logo de MAST +logo interface sur chaque slide et page de garde interface?
-\institute[http://labos.ulg.ac.be/mast/]{MAST}
+%\institute[http://labos.ulg.ac.be/mast/]{}
 \date[2017-2018]
-
 
 \AtBeginSection[]{
   \begin{frame}
@@ -58,9 +56,30 @@
 
 % \usebackgroundtemplate{ }  
 
+\begin{frame}
+\large
+\centering
+\textbf<1>{\textcolor{MidnightBlue}{Resource}} \textbf<2>{\textcolor{Emerald}{Competition}} \& \textbf<3>{\textcolor{BurntOrange}{Community}} \textbf<4>{\textcolor{Plum}{Structure}} \\
+\vspace{2cm}
+\only<1>{
+\textcolor{MidnightBlue}{Nutrient, light, food, ... Something that is required and consumed for growth.}
+}
+\only<2>{
+\textcolor{Emerald}{Different populations depends on the same resource}
+}
+\only<3>{
+\textcolor{BurntOrange}{Is cohabitation possible ? Under which conditions ?}
+}
+\only<4>{
+\textcolor{Plum}{Abstract mathematical framework: Simple case, assumption, generalities.}
+}
+\end{frame}
+
+
+
 \section{Basics}
 
-\begin{frame}{What are ressources ?}
+\begin{frame}{What are \textcolor{MidnightBlue}{Resource} ?}
  A factor that
  \begin{itemize}
  \item has a given availability
@@ -317,9 +336,8 @@ Zero Net Growth Isoline: where $\gamma$= mortality
   \end{itemize}
 \end{frame}
 
-
 \begin{frame}{Equilibrium Points}  
-Examples in R with TILMAN1
+Examples in R with TILMAN1 ``Tilman\_1species.R''
 \begin{itemize}
 \item Present the program
 \item iso-growth
@@ -404,11 +422,21 @@ Stable if
     \end{columns}
 \end{frame}
 
-\begin{frame}{2 Species : competition}  
+\begin{frame}{2 Species : Competition}  
 \begin{figure}
        \includegraphics[width=.8\framewidth]{Eq6types}
     \end{figure}
 \end{frame}
+
+\begin{frame}{2 Species : Competition}  
+Examples in R with TILMAN1 ``Tilman\_2species.R''
+\begin{itemize}
+\item Trajectories
+\item Equilibrium points (show that cohabitation conditions depends on resource supply point)
+\end{itemize}
+\end{frame}
+
+
 
 \begin{frame}{Resource spatial gradients}
 \begin{figure}
